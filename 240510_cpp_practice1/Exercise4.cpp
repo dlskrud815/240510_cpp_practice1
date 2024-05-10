@@ -40,15 +40,26 @@ int Character::ManipulateCharacter(int option)
 		cout << "- 변경할 이름 입력: ";
 		cin >> name;
 		setName(name);
+		cout << "이름이 변경되었습니다." << endl;
 		break;
 	case 2:
+		cout << "Level Up! " << getLevel() << endl;
 		setLevelUp(getLevel());
 		break;
 	case 3:
+		cout << "아이템을 얻었습니다." << endl;
 		setGetItem(getItem_num());
 		break;
 	case 4:
-		setUseItem(getItem_num());
+		if (getItem_num() >= 0)
+		{
+			cout << "아이템을 사용했습니다." << endl;
+			setUseItem(getItem_num());
+		}
+		else
+		{
+			cout << "경고: 사용할 아이템이 없습니다." << endl;
+		}
 		break;
 	case 5:
 		cout << endl << "------------------" << endl
