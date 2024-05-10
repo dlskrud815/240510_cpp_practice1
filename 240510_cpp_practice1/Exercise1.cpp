@@ -13,7 +13,7 @@ public:
 		m_height = height;
 	}
 
-	float Area(float m_width, float m_height);
+	float Area();
 
 	/*
 	float Area()
@@ -27,7 +27,7 @@ private:
 	float m_height = 0;
 };
 
-float Rectangle::Area(float m_width, float m_height)
+float Rectangle::Area()
 {
 	return m_width * m_height;
 }
@@ -41,7 +41,7 @@ int main()
 	Rectangle rec{ width, height };
 	//Rectangle rec;
 
-	cout << "³ÐÀÌ´Â: " << rec.Area(width, height);
+	cout << "³ÐÀÌ´Â: " << rec.Area();
 
 	return 0;
 }
