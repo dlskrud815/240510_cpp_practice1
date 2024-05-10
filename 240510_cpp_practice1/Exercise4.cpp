@@ -51,7 +51,7 @@ int Character::ManipulateCharacter(int option)
 		setGetItem(getItem_num());
 		break;
 	case 4:
-		if (getItem_num() >= 0)
+		if (getItem_num() > 0)
 		{
 			cout << "아이템을 사용했습니다." << endl;
 			setUseItem(getItem_num());
