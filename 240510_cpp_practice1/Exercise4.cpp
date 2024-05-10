@@ -56,10 +56,8 @@ int Character::ManipulateCharacter(int option)
 			<< "레벨: " << getLevel() << endl
 			<< "아이템 수: " << getItem_num() << endl;
 		break;
-	case 6:
-		return 0;
 	}
-	return 1;
+	return option;
 }
 
 int main()
@@ -74,7 +72,7 @@ int main()
 		<< "3을 입력하면, item 줍기 (아이템 수 1씩 증가)" << endl
 		<< "4을 입력하면, item 사용 (아이템 수 1씩 감소)" << endl
 		<< "5을 입력하면, 이름, level, item 수를 콘솔에 출력" << endl
-		<< "6을 입력하면, 게임 종료" << endl
+		<< "0을 입력하면, 게임 종료" << endl
 		<< "------------------------------------" << endl;
 
 	Character character("기본 이름");
@@ -84,6 +82,6 @@ int main()
 		cout << endl << "사용자 입력: ";
 		cin >> option;
 
-		character.ManipulateCharacter(option);
+		if(character.ManipulateCharacter(option) == 0) return 0;
 	}
 }
