@@ -15,6 +15,13 @@ public:
 
 	float Area(float m_width, float m_height);
 
+	/*
+	float Area()
+	{
+		return m_width * m_height;
+	}
+	*/
+
 private:
 	float m_width = 0;
 	float m_height = 0;
