@@ -9,8 +9,8 @@ public:
 
 	Rectangle(float width, float height)
 	{
-		m_width = width;
-		m_height = height;
+		this->m_width = width;
+		this->m_height = height;
 	}
 
 	float Area();
