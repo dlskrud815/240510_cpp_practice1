@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "Character.h"
+#include "Monster.h"
 
 using namespace std;
 
@@ -27,6 +28,6 @@ int main()
 		cout << endl << "사용자 입력: ";
 		cin >> option;
 
-		if(character.ManipulateCharacter(option) == 0) return 0;
+		if (character.ManipulateCharacter(option) == 0) return 0;
 	}
 }
