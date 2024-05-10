@@ -51,10 +51,10 @@ int Character::ManipulateCharacter(int option)
 		setUseItem(getItem_num());
 		break;
 	case 5:
-		cout << endl << "------------------"
+		cout << endl << "------------------" << endl
 			<< "이름: " << getName() << endl
 			<< "레벨: " << getLevel() << endl
-			<< "아이템 수: " << getItem_num() 
+			<< "아이템 수: " << getItem_num() << endl
 			<< "------------------" << endl;
 		break;
 	}
