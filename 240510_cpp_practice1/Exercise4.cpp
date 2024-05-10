@@ -43,8 +43,9 @@ int Character::ManipulateCharacter(int option)
 		cout << "이름이 변경되었습니다." << endl;
 		break;
 	case 2:
-		cout << "Level Up! " << getLevel() << endl;
+		cout << "Level Up! ";
 		setLevelUp(getLevel());
+		cout << "lv." << getLevel() << endl;
 		break;
 	case 3:
 		cout << "아이템을 얻었습니다." << endl;
