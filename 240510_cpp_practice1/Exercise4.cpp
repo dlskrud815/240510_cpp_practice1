@@ -20,7 +20,6 @@ public:
 
 	void setName(string name) { this->name = name; }
 	void setLevelUp(int level) { this->level = level + 1; }
-
 	void setGetItem(int item_num) { this->item_num = item_num + 1; }
 	void setUseItem(int item_num) { this->item_num = item_num - 1; }
 
